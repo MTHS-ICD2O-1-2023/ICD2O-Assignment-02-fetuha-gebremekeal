@@ -7,15 +7,15 @@
 /**
  * This function calculates area of a triangle.
  */
-function calculateAreaOfTriangle() {
+function calculateVolumeOfPyramid() {
   // input
-  const baseOfTriangle = parseInt(document.getElementById('base-length').value)
-  const heightOfTriangle = parseInt(document.getElementById('base-width').value)
-  const heighOfTriangle = parseInt(document.getElementById('height').value)
+  const baseLength = parseInt(document.getElementById('base-length').value)
+  const baseWidth = parseInt(document.getElementById('base-width').value)
+  const heighOfPyramid = parseInt(document.getElementById('height').value)
 
   // process
-  const areaOfTriangle = (baseOfTriangle * heightOfTriangle) * 0.5
+  const volumeOfPyramid = (baseLength * baseWidth * heighOfPyramid ) * 0.5
 
   // output
-  document.getElementById("area").innerHTML = 'Area is: ' + areaOfTriangle + ' cm²'
+  document.getElementById("volume").innerHTML = 'Volume is: ' + volumeOfPyramid + ' cm²'
 }
