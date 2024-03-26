@@ -29,20 +29,29 @@
         <img src="./images/Volume-of-a-Rectangular-Pyramid.jpg alt="Volume-of-a-Rectangular-Pyramid image" />
       </div>
       <br />
-      <div class="page-content">Enter the base and height in cm.</div>
+      <div class="page-content">Enter the base length, base width, and height in cm.</div>
       <form action="#">
         <div class="mdl-textfield mdl-js-textfield">
           <!-- input pattern attribute -->
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="base-of-triangle" />
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="base-length" />
           <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="base-of-triangle">Base of triangle (cm)</label>
+          <label class="mdl-textfield__label" for="base-length">Base length (cm)</label>
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number.</span>
         </div>
         <br />
         <div class="mdl-textfield mdl-js-textfield">
           <!-- input pattern attribute -->
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height-of-triangle" />
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="base-width" />
+          <!-- mdl-textfield__label -->
+          <label class="mdl-textfield__label" for="base-width">Base width (cm)</label>
+          <!-- class "mdl-textfield__error" -->
+          <span class="mdl-textfield__error">Input is not a number.</span>
+        </div>
+        <br />
+        <div class="mdl-textfield mdl-js-textfield">
+          <!-- input pattern attribute -->
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height" />
           <!-- mdl-textfield__label -->
           <label class="mdl-textfield__label" for="height">Height of rectangle (cm)</label>
           <!-- class "mdl-textfield__error" -->
@@ -51,13 +60,13 @@
         <br />
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculateAreaOfTriangle()">
+          onclick="calculateVolumeOfPyramid()">
           Calculate
         </button>
       </form>
       <br />
       <div class="page-content-answer">
-        <div id="area"></div>
+        <div id="volume"></div>
       </div>
     </main>
   </div>
