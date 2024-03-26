@@ -14,8 +14,8 @@ function calculateVolumeOfPyramid() {
   const heighOfPyramid = parseInt(document.getElementById('height').value)
 
   // process
-  const volumeOfPyramid = (baseLength * baseWidth * heighOfPyramid ) * 0.5
+  const volumeOfPyramid = (baseLength * baseWidth * heighOfPyramid ) / 3
 
   // output
-  document.getElementById("volume").innerHTML = 'Volume is: ' + volumeOfPyramid + ' cm'
+  document.getElementById("volume").innerHTML = 'Volume is: ' + volumeOfPyramid + ' m'
 }
